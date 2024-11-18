@@ -3,30 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SENSE Lab</title>
-    <link rel="stylesheet" href="style.css">
+    <title>SEnSE Lab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #005f99;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        header img {
+            width: 50px;
+            vertical-align: middle;
+        }
+        header h1 {
+            display: inline;
+            margin-left: 10px;
+            font-size: 1.5rem;
+        }
+        nav {
+            background: #004477;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .research, .team, .contact {
+            background: white;
+            margin: 1rem auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            padding: 1rem;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to SENSE Lab</h1>
-        <p>Software Engineering and Security Exploration Lab</p>
+        <img src="logo.png" alt="SEnSE Lab Logo">
+        <h1>SEnSE Lab</h1>
     </header>
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>SENSE Lab focuses on cutting-edge research in software engineering and security evaluation.</p>
-        </section>
-        <section>
-            <h2>Research Areas</h2>
-            <ul>
-                <li>Software Security</li>
-                <li>Vulnerability Analysis</li>
-                <li>Formal Verification</li>
-            </ul>
-        </section>
-        <footer>
-            <p>Contact us at: info@senselab.com</p>
-        </footer>
-    </main>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home">
+        <h2>Welcome to SEnSE Lab</h2>
+        <p>Software Engineering and Security Exploration Lab. Advancing secure software systems through innovative research.</p>
+    </section>
+    <section id="research" class="research">
+        <h3>Our Research Areas</h3>
+        <ul>
+            <li>Software Security</li>
+            <li>Vulnerability Analysis</li>
+            <li>Formal Verification</li>
+        </ul>
+    </section>
+    <section id="team" class="team">
+        <h3>Our Team</h3>
+        <p>Meet the researchers and students driving innovation at SEnSE Lab.</p>
+    </section>
+    <section id="contact" class="contact">
+        <h3>Contact Us</h3>
+        <p>Email: info@senselab.com</p>
+        <p>Address: Department of Computer Science, [Your Institution]</p>
+    </section>
+    <footer>
+        <p>© 2024 SEnSE Lab. All rights reserved.</p>
+    </footer>
 </body>
 </html>
